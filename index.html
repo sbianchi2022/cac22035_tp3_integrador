@@ -29,9 +29,9 @@
             width: 100%;
             text-align: right;
         }
-        div[class|="solapado"]{
-            /* position: absolute; */
-        }
+        /* div[class|="solapado"]{
+            /* position: absolute; * /
+        } */
         div.solapado_2{
             color: white;
             margin: 10%;
@@ -211,25 +211,14 @@
                             </button>
                         </div>  
                     </div>
-                    <div class="sobreCarrousel solapado_2">
-                        <p>Conf Bs As</p>
-                        <p>Bs As llega  por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están cerrando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primero nivel que tenemos para ti. Te esperamos!</p>
-
-                        <button type="button" class="btn btn-outline-dark btn-lg buttom_opaco_soloborde">Quiero ser orador</button>   
-                        <button type="button" class="btn btn-success  btn-lg buttom_opaco_visible">Comprar tickets</button>  
-
-
-                      
-
-                    </div>  
                 </div>                
             </div>
 
-            <div class="row justify-content-xs-center" id="oradores">   <!-- ORADORES --> <!-- CARD -->
-                <h6>CONOCE A LOS</h6>
+            <div class="row" id="oradores">   <!-- ORADORES --> <!-- CARD -->
+                <div class="col d-flex justify-content-center pt-3"><h6>CONOCE A LOS</h6></div>
             </div>
-            <div class="row justify-content-md-center">
-                <h2>ORADORES</h2>
+            <div class="row justify-content-center">
+                <div class="col d-flex justify-content-center pt-1"><h2>ORADORES</h2></div>
             </div>                
                 <div class="row">
                     <!-- Como solo tengo que pegar el codigo, linkeo las imagenes de los Cards:
@@ -272,22 +261,74 @@
                         </div>  
                     </div>
                 </div>
+            <!-- </div> -->
+            <div class="row" id="lugaryfecha">   <!-- PANTALLA DIVIDIDA -->
+                PANTALLA DIVIDIDA
+
+
+
+
+
+
+
+
             </div>
-            <div class="row" id="lugaryfecha">   <!-- LUGARyFECHA -->
-                LUGAR Y FECHA
-            </div>
+            
             <div class="row" id="convertite">   <!-- CONVIERTETE EN ORADOR -->
-                CONVIERTETE
+                <div class="col d-flex justify-content-center pt-3"><h6>CONVIÉRTETE EN UN</h6></div>
             </div>
-            <div class="row" id="comprar">   <!-- COMPRAR TICKETS -->
-                COMPRAR
+            <div class="row">
+                <div class="col d-flex justify-content-center pt-1"><h2>ORADOR</h2></div>
+            </div>      
+            <div class="row pt-2"> <!--Formulario-->
+                <div class="col-sm-4"></div>
+
+                <!-- <div class="container w-75 d-flex p-2 mx-auto justify-content-sm-center"></div> -->
+
+                <div class="col-sm-4">
+                    <form>
+                        <!-- <div class="input-group-sm">
+                            <input type="text" class="form-control" placeholder="Nombre">  
+                            <input type="text" class="form-control" placeholder="Apellido">   
+                        </div> -->
+                        <div class="row border-0">    
+                            <div class="col-sm-6"><input type="text" class="form-control" placeholder="Nombre"></div>    
+                            <div class="col-sm-6"><input type="text" class="form-control" placeholder="Apellido"></div>    
+                        </div>  
+
+                        <!-- <div class="form-group pt-2">                     
+                            <input type="text" class="form-control" placeholder="Nombre">                     
+                        </div>  
+                        <div class="form-group pt-2">                       
+                            <input type="text" class="form-control" placeholder="Apellido">           
+                        </div>    -->
+
+                        <div class="form-group pt-2">                       
+                            <textarea class="form-control" placeholder="Sobre qué quieres hablar?" rows="4"></textarea>  
+                            <p class="fuentexs">Recuerda incluir un título para la charla</p>         
+                        </div>                                   
+                        <button type="submit" class="btn btn-success w-100">Enviar</button>            
+                    </form>   
+                </div>
+                <div class="col-sm-4"></div>
             </div>
+            <!-- <div class="row-cols-2">
+                <div class="col py-3 px-lg-5 border ">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col py-3 px-lg-5 border t">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>                 
+            </div> -->
+            <!-- <div class="row" id="comprar">   
+                COMPRAR TICKETS
+            </div> -->
         </div>
     </main>
     <footer>
 
     </footer>
-    
+       FOOTER
     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>     
 </body>
 </html>
