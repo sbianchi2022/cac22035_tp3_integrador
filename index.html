@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <title>CaC22035-PHP-TP-Integradror</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }        
+        .buttom_bajo{
+            padding: 0px 2px;
+            font-weight: bold;
+        }
+        .imagenopaca{
+            filter: brightness(0.1);
+            filter: opacity(0.8);
+        }
+        .sobreCarrousel{
+            background-color: rgba(0, 0, 0, 0.123);
+            filter:brightness(0.3);
+            text-align: right;
+            position: absolute;
+        }
+        div[class|="solapado"]{
+            position: absolute;
+        }
+        div.solapado_2{
+            top: 0px;
+            left:0px;
+            text-align: right;
+        }
+        .buttom_opaco_soloborde  {
+            border-color: white;
+            color: white;
+        }
+        .buttom_opaco_visible{
+            filter: opacity(100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- PHP FULL STACK - CaC 22035 - 1er C 2022 - TP Integrador Final Front End -->
+    <!-- Alcance: Deberán replicar la siguiente página principal con lo visto en clase hasta el momento, se recomienda usar bootstrap.
+        - Las imágenes a utilizar se encuentran en un comprimido, así como la imagen final.
+        - La entrega será pegando el link de donde está alojado su trabajo, puede ser cualquiera de las siguientes alternativas ftp, servidor gratuito, github o algúna herramienta que permita alojar el trabajo.
+        - Fecha de entrega 1/5    
+    -->
+    <header>
+        <div class="row-cols-3">
+            <div class="col-sm-2"> <!--logo codo a codo-->
+                <!-- justify-content: right -->
+
+
+            </div>
+            <div class="col-sm-2"> <!-- titulo -->
+                <!-- justify-content: left -->
+                <span class="float-left" style="float: left; font-weight: bold; font-size: 2em;">Conf Bs As</span>
+            </div>
+            <div class="col-sm-8">  <!-- nav -->
+
+                <ul class="nav">
+                    <li class="nav-item">            
+                        <a class="nav-link active" href="#conferencia">La conferencia</a>            
+                    </li>            
+                    <li class="nav-item">            
+                        <a class="nav-link" href="#oradores">Los oradores</a>            
+                    </li> 
+                    <li class="nav-item">            
+                        <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>            
+                    </li>        
+                    <li class="nav-item">            
+                        <a class="nav-link" href="#convertite">Conviértete en orador</a>            
+                    </li>                                    
+                    <li class="nav-item">            
+                        <a class="nav-link" href="#comprar" style="color: darkgreen;">Comprar tickets</a>            
+                    </li>            
+                </ul>  
+            </div>
+        </div>
+    </header>
+    <main style="margin:0; padding:0;">
+        <div class="container-fluid">
+            <div class="row justify-content-xs-center" id="conferencia">   <!-- CARROUSEL --> 
+                <!-- viene de /clase14/bootstrapCarrouse.html -->
+                <div class="col">  <!-- <div class="col-sm-12">-->
+                    <div class="solapado_1">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item "> <!-- active-->
+                                    <img src="img/carrousel_ba1.jpg" class="d-block w-100 imagenopaca" alt="BA1"><!--width="500" height="500"-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carrousel_ba2.jpg" class="d-block w-100 imagenopaca" alt="BA2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carrousel_ba3.jpg" class="d-block w-100 imagenopaca" alt="BA3">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="img/carrousel_hawaii.jpg" class="d-block w-100 imagenopaca" alt="Hawaii1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carrousel_hawaii2.jpg" class="d-block w-100 imagenopaca" alt="Hawaii2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carrousel_hawaii3.jpg" class="d-block w-100 imagenopaca" alt="Hawaii3">
+                                </div>                            
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>  
+                    </div>
+                    <div class="sobreCarrousel solapado_2">
+                        <p>Conf Bs As</p>
+                        <p>Bs As llega  por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están cerrando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primero nivel que tenemos para ti. Te esperamos!</p>
+
+                        <button type="button" class="btn btn-outline-dark btn-lg buttom_opaco_soloborde">Quiero ser orador</button>   
+                        <button type="button" class="btn btn-success  btn-lg buttom_opaco_visible">Comprar tickets</button>  
+
+
+                      
+
+                    </div>  
+                </div>                
+            </div>
+
+            <div class="row justify-content-xs-center" id="oradores">   <!-- ORADORES --> <!-- CARD -->
+                <h6>CONOCE A LOS</h6>
+            </div>
+            <div class="row justify-content-md-center">
+                <h2>ORADORES</h2>
+            </div>                
+                <div class="row">
+                    <!-- Como solo tengo que pegar el codigo, linkeo las imagenes de los Cards:
+                            imagen HTML5: https://disenowebakus.net/imagenes/articulos/html5.jpg
+                            imagen CSS3: https://www.alexmedina.net/wp-content/uploads/2020/08/css_blog.png
+                            imagen BOOSTRAP: https://marcosaguilar.es/wp-content/uploads/2019/08/bootstrap-social-share.png
+                    -->              
+                    <div class="card-group">
+                        <div class="card" style="width: 100%; height: 50%;">
+                            <!-- .img-fluid: hace q imagen entre en una celda de la grid donde esta inserta -->
+                            <img src="img/orador_steve.jpg" class="card-img-top img-fluid" style="width: 100%; height:100%;" alt="Orador Steve Jobs">            
+                            <div class="card-body">     
+                                <button type="button" class="btn btn-warning btn-sm buttom_bajo">Javascript</button> 
+                                <button type="button" class="btn btn-primary btn-sm buttom_bajo">React</button>     
+                                <h4 class="card-title">Stever Jobs</h4>            
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel cupiditate voluptate quam quod voluptates optio ipsam perspiciatis quae, ducimus debitis quos porro itaque tempora suscipit nostrum. Doloremque, suscipit eveniet.</p>          
+                            </div>            
+                        </div>   
+                        <div class="card" style="width:100%; height: 50%;">
+                            <img src="img/orador_bill.jpg" class="card-img-top img-fluid" style="width: 100%; height:100%;"  alt="Orador Bill Gates">            
+                            <div class="card-body">          
+                                <button type="button" class="btn btn-warning btn-sm buttom_bajo">Javascript</button> 
+                                <button type="button" class="btn btn-primary btn-sm buttom_bajo">React</button>         
+                                <h4 class="card-title">Bill Gates</h4>            
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, consequatur nostrum. Deleniti accusantium, praesentium necessitatibus eaque laboriosam quia ducimus consequuntur atque quasi vitae non asperiores similique autem maxime pariatur voluptas?</p>          
+                            </div>    
+                        </div>
+                        <div class="card" style="width: 100%; height: 50%;">
+                            <img src="img/orador_ada.jpeg" class="card-img-top img-fluid" style="width: 100%; height:100%;" alt="Oradora Ada">            
+                            <div class="card-body">         
+                                <button type="button" class="btn btn-secondary btn-sm buttom_bajo">Negocios</button> 
+                                <button type="button" class="btn btn-danger btn-sm buttom_bajo">Startups</button>          
+                                <h4 class="card-title">Ada Lovelace</h4>            
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi recusandae quibusdam ullam iure! Dolores sit nemo voluptatum hic modi maiores nihil iusto temporibus inventore similique. Quis dolorum in molestias.</p>          
+                            </div>   
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="lugaryfecha">   <!-- LUGARyFECHA -->
+                LUGAR Y FECHA
+            </div>
+            <div class="row" id="convertite">   <!-- CONVIERTETE EN ORADOR -->
+                CONVIERTETE
+            </div>
+            <div class="row" id="comprar">   <!-- COMPRAR TICKETS -->
+                COMPRAR
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>     
+</body>
+</html>
