@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}        
+.colorFondo{
+    background-color: rgb(51,58,64);
+}
+.colorgradiente{
+    /* desde rgb(29,55,68)=#1c3643 hasta rgb(29,82,113)=#1d5271*/ 
+    /* background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background: linear-gradient(90deg,#1c3643 0%, #1d5271 80%);
+}
+.buttom_bajo{
+    padding: 0px 2px;
+    font-weight: bold;
+}
+/* .imagenopaca{
+    filter: brightness(0.1);
+    filter: opacity(0.8);
+} */
+.sobreCarrousel{
+    background-color: black;
+    filter:opacity(0.5);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+}
+/* div[class|="solapado"]{
+    /* position: absolute; * /
+} */
+/* div.solapado_2{
+    color: white;
+    margin: 10%;
+    /* text-align: right; * /
+    align-items: right ;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    z-index: 100;
+    width: 50%;
+    height: 50%;
+} */
+.buttom_opaco_soloborde  {
+    border-color: white;
+    color: white;
+}
+.buttom_opaco_visible{
+    filter: opacity(100%);
+    color: white;
+}
+.fuentexs{
+    font-size: 0.75em;
+}
+.fuentesm{
+    font-size: 1em;
+}
+.fuentemd{
+    font-size: 2em;
+    font-weight: bold;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(192, 191, 191);
+}
+.nav-link:active{
+    color: white;
+}
+.filter{
+    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
+}
+.no-filter{
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.fijo{
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    z-index: 101;
+    background-color: transparent;
+}
