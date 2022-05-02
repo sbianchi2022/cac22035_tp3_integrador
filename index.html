@@ -15,6 +15,11 @@
         .colorFondo{
             background-color: rgb(51,58,64);
         }
+        .colorgradiente{
+            /* desde rgb(29,55,68)=#1c3643 hasta rgb(29,82,113)=#1d5271*/ 
+            /* background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+            background: linear-gradient(90deg,#1c3643 0%, #1d5271 80%);
+        }
         .buttom_bajo{
             padding: 0px 2px;
             font-weight: bold;
@@ -35,10 +40,10 @@
         /* div[class|="solapado"]{
             /* position: absolute; * /
         } */
-        div.solapado_2{
+        /* div.solapado_2{
             color: white;
             margin: 10%;
-            /* text-align: right; */
+            /* text-align: right; * /
             align-items: right ;
                 position: relative;
                 top: 0px;
@@ -46,7 +51,7 @@
             z-index: 100;
             width: 50%;
             height: 50%;
-        }
+        } */
         .buttom_opaco_soloborde  {
             border-color: white;
             color: white;
@@ -58,8 +63,17 @@
         .fuentexs{
             font-size: 0.75em;
         }
-
-
+        .fuentemd{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: rgb(192, 191, 191);
+        }
+        .nav-link:active{
+            color: white;
+        }
         .filter{
             -webkit-filter: brightness(60%);
             filter: brightness(60%);
@@ -80,8 +94,9 @@
     -->
     <header class="colorFondo">
         <div class="container-fluid">
+
             <div class="row">
-                <div class="col-4"> <!--logo codo a codo-->
+                <div class="col-12 col-md-4"> <!--logo codo a codo-->
                     <!-- justify-content: right -->
                     <img src="img/logo_codoacodo.png"  style="width: 150px; height:80px;"> <!-- class="img-fluid" -->
                 <!-- </div> -->
@@ -89,7 +104,7 @@
                     <!-- justify-content: left -->
                     <span class="float-left text-white" style="font-size: 1.5em;">Conf Bs As</span>
                 </div>
-                <div class="col-8 align-middle">  <!-- nav -->
+                <div class="col-12 col-md-8 justify-content-end align-middle">  <!-- nav -->
                     <ul class="nav">
                         <li class="nav-item">            
                             <a class="nav-link active" href="#conferencia">La conferencia</a>            
@@ -218,10 +233,10 @@
             </div>
 
             <div class="row" id="oradores">   <!-- ORADORES --> <!-- CARD -->
-                <div class="col d-flex justify-content-center pt-3"><h6>CONOCE A LOS</h6></div>
+                <div class="col d-flex justify-content-center pt-3 fuentexs"><p>CONOCE A LOS</p></div>
             </div>
             <div class="row justify-content-center">
-                <div class="col d-flex justify-content-center pt-1"><h2>ORADORES</h2></div>
+                <div class="col d-flex justify-content-center pt-0 fuentemd"><p>ORADORES</p></div>
             </div>                
                 <div class="row">
                     <!-- Como solo tengo que pegar el codigo, linkeo las imagenes de los Cards:
@@ -266,54 +281,33 @@
                 </div>
             <!-- </div> -->
             <!-- <div class="row" id="lugaryfecha">   PANTALLA DIVIDIDA -->
-            <div class="container-fluid">
-                <div class="row-cols-sm-2">
-                    <div class="col" style="background-color: red;"> hola                    </div>
-                    <div class="col" style="background-color: rgb(8, 157, 18);"> chau                    </div>
+        
+            <divc class="row">
+                <div class="col m-0 p-0">
+                    <img src="img/pantalladividida_honolulu.jpg" class="img-fluid" style="width: 100%; height:100%;" alt="Fecha y Hora">
                 </div>
+                <div class="col m-0 p-4 text-white colorFondo fuentexs">
+                        <h3>Bs As - Octubre</h3>
+                        <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudaada y el condado de Honolulu han formado una ciudada condado consolidada que cubre toda la ciudada (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                        <p><a class="btn btn-outline-light mb-3" href="">Conocé más</a></p>        
+                </div>              
             </div>
-         
-
-
-
-
-                <div class="container">
-                    <div class="row-cols-sm-2"id="lugaryfecha">   <!-- PANTALLA DIVIDIDA -->
-                        <div class="col m-0 p-0" style="background-color: red;">
-                            <img src="img/pantalladividida_honolulu.jpg" class="img-fluid" style="width: 100%; height:100%;" alt="Fecha y Hora">
-                        </div>
-                        <div class="col text-white colorFondo  text-white">
-                                <h3>Bs As - Octubre</h3>
-                                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudaada y el condado de Honolulu han formado una ciudada condado consolidada que cubre toda la ciudada (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                                <p><a class="btn btn-outline-light mb-3" href="">Quiero ser orador</a></p>        
-                        </div>
-                    </div>
-
-                     <!-- <div class="container__hijo hijoIzq">
-                        <p class="container__hijo__p__primerLinea">DISEÑO</p>
-                        <p class="container__hijo__p__segundaLinea">CREATIVO</p>
-                        <P class="container__hijo__p__contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut, in quisquam eligendi culpa laudantium sit. Similique voluptatum consectetur, sapiente facere magni recusandae in dolorem non ratione impedit explicabo nesciunt.</P>
-                        <button type="button">Más Info</button>
-                    </div>
-                    <div class="container__hijo hijoDer">
-                       <img src="img/cacphp22035_pantalla_dividida_foto.png" alt="Imagen Diseño Creativo" class="container__hijo__imagen">
-                    </div> -->
-                </div>
-
-            <!-- </div> -->
             
             <div class="row" id="convertite">   <!-- CONVIERTETE EN ORADOR -->
-                <div class="col d-flex justify-content-center pt-3"><h6>CONVIÉRTETE EN UN</h6></div>
+                <div class="col d-flex justify-content-center pt-3 m-0 fuentexs"><p>CONVIÉRTETE EN UN</p></div>
             </div>
             <div class="row">
-                <div class="col d-flex justify-content-center pt-1"><h2>ORADOR</h2></div>
-            </div>      
+                <div class="col d-flex justify-content-center pt-0 fuentemd m-0"><p>ORADOR</p></div>
+            </div>   
+            <div class="row">
+                <div class="col d-flex justify-content-center pt-0 fuentexs m-0"><p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p></div>
+            </div>                 
             <div class="row pt-2"> <!--Formulario-->
-                <div class="col-sm-4"></div>
+                <div class="col-sm-3"></div>
 
                 <!-- <div class="container w-75 d-flex p-2 mx-auto justify-content-sm-center"></div> -->
 
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <form>
                         <!-- <div class="input-group-sm">
                             <input type="text" class="form-control" placeholder="Nombre">  
@@ -338,7 +332,7 @@
                         <button type="submit" class="btn btn-success w-100">Enviar</button>            
                     </form>   
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-3"></div>
             </div>
             <!-- <div class="row-cols-2">
                 <div class="col py-3 px-lg-5 border ">
@@ -354,9 +348,45 @@
         </div>
     </main>
     <footer>
-
+        <div class="container-fluid colorgradiente">
+            <!-- <div class="row"></div> -->
+            <div class="row mt-2 m-b-2 justify-content-center">
+                <!-- <div class="col-1"></div> -->
+                <div class="col fuenteBlanca fuentexs">
+                    <ul class="nav">
+                        <li class="nav-item text-white">            
+                        <a class="nav-link active" href="#">Preguntar Frecuentes</a>            
+                        </li>            
+                        <li class="nav-item">            
+                        <a class="nav-link" href="#">Contáctenos</a>            
+                        </li>            
+                        <li class="nav-item">            
+                        <a class="nav-link" href="#">Prense</a>            
+                        </li>            
+                        <li class="nav-item">            
+                        <a class="nav-link" href="#">Conferencia</a>            
+                        </li>            
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#">Términos y Condiciones</a>            
+                        </li>            
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#">Privacidad</a>            
+                        </li>            
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#">Estudiantes</a>            
+                        </li>                      
+                    </ul>  
+                </div>
+                <!-- <div class="col-1"></div> -->
+            </div>
+        </div>
+        <!-- <div class="row"></div> -->
     </footer>
-       FOOTER
+
+    
+
+   
+
     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>     
 </body>
 </html>
