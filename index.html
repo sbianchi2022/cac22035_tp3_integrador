@@ -12,6 +12,9 @@
             padding: 0px;
             box-sizing: border-box;
         }        
+        .colorFondo{
+            background-color: rgb(51,58,64);
+        }
         .buttom_bajo{
             padding: 0px 2px;
             font-weight: bold;
@@ -75,36 +78,36 @@
         - La entrega será pegando el link de donde está alojado su trabajo, puede ser cualquiera de las siguientes alternativas ftp, servidor gratuito, github o algúna herramienta que permita alojar el trabajo.
         - Fecha de entrega 1/5    
     -->
-    <header>
-        <div class="row-cols-3">
-            <div class="col-sm-2"> <!--logo codo a codo-->
-                <!-- justify-content: right -->
-
-
-            </div>
-            <div class="col-sm-2"> <!-- titulo -->
-                <!-- justify-content: left -->
-                <span class="float-left" style="float: left; font-weight: bold; font-size: 1.5em;">Conf Bs As</span>
-            </div>
-            <div class="col-sm-8">  <!-- nav -->
-
-                <ul class="nav">
-                    <li class="nav-item">            
-                        <a class="nav-link active" href="#conferencia">La conferencia</a>            
-                    </li>            
-                    <li class="nav-item">            
-                        <a class="nav-link" href="#oradores">Los oradores</a>            
-                    </li> 
-                    <li class="nav-item">            
-                        <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>            
-                    </li>        
-                    <li class="nav-item">            
-                        <a class="nav-link" href="#convertite">Conviértete en orador</a>            
-                    </li>                                    
-                    <li class="nav-item">            
-                        <a class="nav-link" href="#comprar" style="color: darkgreen;">Comprar tickets</a>            
-                    </li>            
-                </ul>  
+    <header class="colorFondo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"> <!--logo codo a codo-->
+                    <!-- justify-content: right -->
+                    <img src="img/logo_codoacodo.png"  style="width: 150px; height:80px;"> <!-- class="img-fluid" -->
+                <!-- </div> -->
+                <!-- <div class="col-2"> titulo -->
+                    <!-- justify-content: left -->
+                    <span class="float-left text-white" style="font-size: 1.5em;">Conf Bs As</span>
+                </div>
+                <div class="col-8 align-middle">  <!-- nav -->
+                    <ul class="nav">
+                        <li class="nav-item">            
+                            <a class="nav-link active" href="#conferencia">La conferencia</a>            
+                        </li>            
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#oradores">Los oradores</a>            
+                        </li> 
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>            
+                        </li>        
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#convertite">Conviértete en orador</a>            
+                        </li>                                    
+                        <li class="nav-item">            
+                            <a class="nav-link" href="#comprar" style="color: rgb(1, 161, 1);">Comprar tickets</a>            
+                        </li>            
+                    </ul>  
+                </div>
             </div>
         </div>
     </header>
@@ -112,8 +115,8 @@
         <div class="container-fluid">
             <div class="row justify-content-xs-center" id="conferencia">   <!-- CARROUSEL --> 
                 <!-- viene de /clase14/bootstrapCarrouse.html -->
-                <div class="col">  <!-- <div class="col-sm-12">-->
-                    <div class="solapado_1">
+                <div class="col p-0 m-0">  <!-- <div class="col-sm-12">-->
+                    <!-- <div class="solapado_1"> -->
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item "> <!-- active-->
@@ -210,7 +213,7 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>  
-                    </div>
+                    <!-- </div> -->
                 </div>                
             </div>
 
@@ -262,17 +265,42 @@
                     </div>
                 </div>
             <!-- </div> -->
-            <div class="row" id="lugaryfecha">   <!-- PANTALLA DIVIDIDA -->
-                PANTALLA DIVIDIDA
-
-
-
-
-
-
-
-
+            <!-- <div class="row" id="lugaryfecha">   PANTALLA DIVIDIDA -->
+            <div class="container-fluid">
+                <div class="row-cols-sm-2">
+                    <div class="col" style="background-color: red;"> hola                    </div>
+                    <div class="col" style="background-color: rgb(8, 157, 18);"> chau                    </div>
+                </div>
             </div>
+         
+
+
+
+
+                <div class="container">
+                    <div class="row-cols-sm-2"id="lugaryfecha">   <!-- PANTALLA DIVIDIDA -->
+                        <div class="col m-0 p-0" style="background-color: red;">
+                            <img src="img/pantalladividida_honolulu.jpg" class="img-fluid" style="width: 100%; height:100%;" alt="Fecha y Hora">
+                        </div>
+                        <div class="col text-white colorFondo  text-white">
+                                <h3>Bs As - Octubre</h3>
+                                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudaada y el condado de Honolulu han formado una ciudada condado consolidada que cubre toda la ciudada (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                                <p><a class="btn btn-outline-light mb-3" href="">Quiero ser orador</a></p>        
+                        </div>
+                    </div>
+
+                     <!-- <div class="container__hijo hijoIzq">
+                        <p class="container__hijo__p__primerLinea">DISEÑO</p>
+                        <p class="container__hijo__p__segundaLinea">CREATIVO</p>
+                        <P class="container__hijo__p__contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut, in quisquam eligendi culpa laudantium sit. Similique voluptatum consectetur, sapiente facere magni recusandae in dolorem non ratione impedit explicabo nesciunt.</P>
+                        <button type="button">Más Info</button>
+                    </div>
+                    <div class="container__hijo hijoDer">
+                       <img src="img/cacphp22035_pantalla_dividida_foto.png" alt="Imagen Diseño Creativo" class="container__hijo__imagen">
+                    </div> -->
+                </div>
+
+            <!-- </div> -->
             
             <div class="row" id="convertite">   <!-- CONVIERTETE EN ORADOR -->
                 <div class="col d-flex justify-content-center pt-3"><h6>CONVIÉRTETE EN UN</h6></div>
