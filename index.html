@@ -85,7 +85,13 @@
             -webkit-filter: brightness(100%);
             filter: brightness(100%);
         }
-
+        .fijo{
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+            z-index: 101;
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +101,7 @@
         - La entrega será pegando el link de donde está alojado su trabajo, puede ser cualquiera de las siguientes alternativas ftp, servidor gratuito, github o algúna herramienta que permita alojar el trabajo.
         - Fecha de entrega 1/5    
     -->
-    <header class="colorFondo">
+    <header class="colorFondo" id="header">
         <div class="container-fluid">
 
             <div class="row">
@@ -349,12 +355,16 @@
                 COMPRAR TICKETS
             </div> -->
         </div>
+
+        <!-- boton ciruclar fixed -->
+        <div class="fijo"> 
+            <a href="#header" alt="Volver al Menu"><img src="img/arrow_upward_FILL0_wght400_GRAD0_opsz48.png" alt="Volver al Menu" class="rounded-circle"></a> 
+        </div>
     </main>
     <footer>
         <div class="container-fluid colorgradiente">
             <!-- <div class="row"></div> -->
             <div class="row mt-2 m-b-2 justify-content-center">
-                <!-- <div class="col-1"></div> -->
                 <div class="col-12 col-md-8 justify-content-end fuenteBlanca fuentexs">
                     <ul class="nav">
                         <li class="nav-item text-white">            
@@ -380,7 +390,6 @@
                         </li>                      
                     </ul>  
                 </div>
-                <!-- <div class="col-1"></div> -->
             </div>
         </div>
         <!-- <div class="row"></div> -->
